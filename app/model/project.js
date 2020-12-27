@@ -30,7 +30,7 @@ module.exports = app => {
         unique: false,
         required: true,
     },
-    "starts" : {
+    "stars" : {
         type: Number,
         unique: false,
         required: true,
