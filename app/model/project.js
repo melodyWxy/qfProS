@@ -50,6 +50,11 @@ module.exports = app => {
         unique: false,
         required: true,
     },
+    "preview" :{
+        type: String,
+        unique: false,
+        required: true,
+    },
     "remarks" : {
         type: String,
         unique: false,
