@@ -37,7 +37,7 @@ module.exports = app => {
     },
     "typeId" : {
         type: String,
-        unique: true,
+        unique: false,
         required: true,
     },
     "preViewSrc" : {
