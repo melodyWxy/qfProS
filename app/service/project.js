@@ -2,20 +2,23 @@ const Service = require('egg').Service;
 
 class ProjectService  extends Service {
   // 获取项目列表
-  async getProjectList() {
+  async getProjectList(typeId) {
     const {
       ctx,
     } = this;
-    const result = await ctx.model.Project.find();
+    const result = await ctx.model.Project.find({
+      typeId
+    });
     return result;
   }
-  async getProDetail(){
+  async getProDetail(typeId, proId){
     const {
       ctx,
     } = this;
-    // const result = await ctx.model.Project.findOne({
-    //   id
-    // })
+    const result = await ctx.model.Project.findOne({
+      typeId,
+      proId
+    })
     return result;
   }
 }
