@@ -17,7 +17,7 @@ class ProjectController extends Controller {
     const { ctx } = this;
     const {typeId = "0001", proId = "0001" } = ctx.query || {};
     const data = await ctx.service.project.getProDetail(typeId, proId);
-    ctx.body ={
+    ctx.body ={ 
       success: true,
       data,
     };

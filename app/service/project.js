@@ -11,6 +11,7 @@ class ProjectService  extends Service {
     });
     return result;
   }
+  
   async getProDetail(typeId, proId){
     const {
       ctx,
