@@ -15,6 +15,11 @@ module.exports = app => {
         unique: false,
         required: true,
     },
+    "proType" : {
+        type: String,
+        unique: false,
+        required: false,
+    },
     "proId" : {
         type: String,
         unique: true,
